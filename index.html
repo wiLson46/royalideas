@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <div>
+    <div class="supremeContainer">
+
         <!-- header -->
         <!-- header -->
 
@@ -104,31 +105,31 @@
                 Tecnologias
             </div>
 
-            <div class="row mb-5">
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+            <div class="row mb-5 mx-0">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://es.wikipedia.org/wiki/HTML5"><img src="imagenes/html5logo.png" class="rounded float-left logos"></a>
                 </div>
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada#CSS3"><img src="imagenes/csslogo.png" class="rounded float-left logos"></a>
                 </div>
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://es.wikipedia.org/wiki/JavaScript"><img src="imagenes/jslogo.png" class="rounded float-left logos"></a>
                 </div>
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://www.java.com/es/"><img src="imagenes/javalogo.png" class="rounded float-left logos"></a>
                 </div>
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://getbootstrap.com/"><img src="imagenes/bslogo.png" class="rounded float-left logos"></a>
                 </div>
-                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center">
+                <div class="bg-dark col-lg-2 col-sm-12 d-flex justify-content-center px-0">
                     <a href="https://wordpress.org/"><img src="imagenes/wplogo.png" class="rounded float-left logos"></a>
                 </div>
             </div>
 
         </section>
 
-        <!-- footer -->
-        <!-- footer -->
+        <!-- contactarnos -->
+        <!-- contactarnos -->
 
         <section class="my-5">
 
@@ -136,10 +137,16 @@
                 <p class="titulo">Siempre buscando nuevas oportunidades para crecer.</p>
                 <p class="">Trabajemos juntos, comencemos el proceso.</p>
             </div>
+            <!-- Button trigger modal -->
             <div class="mx-5 pb-5">
-                <button type="button" class="btn btn-primary">Contactanos</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formularioModal">Contactanos</button>
             </div>
         </section>
+
+
+
+        <!-- footer -->
+        <!-- footer -->
 
         <section class="bg-dark p-5">
             <div>
@@ -152,12 +159,37 @@
             <a href="https://wa.me/5493413487711" target="_blank" class="soc2">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <div> <img src="imagenes/flag1.png" class="banderas"></a>
+            <div>
+                <img src="imagenes/flag1.png" class="banderas"></a>
                 <img src="imagenes/flag2.png" class="banderas"></a>
             </div>
-            <p>v0.1</p>
+            <p>v0.11</p>
         </section>
     </div>
+
+    <!-- Modal contacto -->
+    <!-- Modal contacto -->
+
+    <div class="modal fade" id="formularioModal" data-backdrop="static" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formularioModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
