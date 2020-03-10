@@ -162,7 +162,7 @@
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
                 <img src="imagenes/flag1.png" class="banderas"></a>
                 <img src="imagenes/flag2.png" class="banderas"></a>
-                <p class="ml-2 mb-0 text-white">v0.18</p>
+                <p class="ml-2 mb-0 text-white">v0.19</p>
             </div>
 
 
@@ -184,15 +184,59 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12 col-lg-6">
+                                <label for="validationCustom01">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Invalid Name.
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12 col-lg-6">
+                                <label for="validationCustom02">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Invalid Lastname.
+                                </div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Invalid email.
+                                </div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="Textarea1">Comments</label>
+                                <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Invalid comments.
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 
@@ -207,5 +251,6 @@
     v0.16 patterns
     v0.17 footer improved
     v0.18 improves on responsive
+    v0.19 forms on modal
 
  -->
