@@ -23,6 +23,16 @@
     font-family: 'Oxanium', cursive;
 }
 
+.card {
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover {
+    transform: scale(1.10) translateZ(0);
+}
+
 #sec2 {
     background: repeat url("imagenes/pat1.png");
 }
