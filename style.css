@@ -30,7 +30,7 @@
 }
 
 .card:hover {
-    transform: scale(1.10) translateZ(0);
+    transform: scale(1.06) translateZ(0);
 }
 
 #sec2 {
@@ -50,6 +50,16 @@
 
 #footer {
     background: repeat url("imagenes/pat2.png");
+}
+
+.iconosDeContacto {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 2px 2px #000;
+    text-decoration: none;
 }
 
 .banderas {
