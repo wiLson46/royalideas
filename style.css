@@ -92,8 +92,6 @@
 }
 
 .logos {
-    height: 200px;
-    width: 200px;
     opacity: 0.5;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -107,7 +105,7 @@
 }
 
 #footer {
-    background: repeat url("imagenes/pat2.png");
+    background: repeat url("imagenes/pat1.png");
 }
 
 .iconosDeContacto {
