@@ -6,15 +6,57 @@
 
 #hero {
     width: 100%;
-    height: 500px;
-    background: gray url("imagenes/plans.jpg") no-repeat;
+    height: 250px;
+    background: gray url("imagenes/hero6.jpg") no-repeat;
 }
 
-@media only screen and (max-width: 376px) {
+
+/** 6+ **/
+
+@media (min-width: 361px) and (max-width: 414px) {
     #hero {
-        height: 250px;
-        background-size: 960px;
-        background-position: 50% 0%;
+        background: gray url("imagenes/hero6plus.jpg") no-repeat;
+        height: 300px;
+    }
+}
+
+
+/** ipad **/
+
+@media (min-width: 415px) and (max-width: 768px) {
+    #hero {
+        background: gray url("imagenes/heroipad.jpg") no-repeat;
+        height: 350px;
+    }
+}
+
+
+/** ipadpro **/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hero {
+        background: gray url("imagenes/heroipro.jpg") no-repeat;
+        height: 400px;
+    }
+}
+
+
+/** notebooks **/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #hero {
+        background: gray url("imagenes/heronb.jpg") no-repeat;
+        height: 450px;
+    }
+}
+
+
+/** desktop **/
+
+@media (min-width: 1441px) {
+    #hero {
+        background: gray url("imagenes/herodesk.jpg") no-repeat;
+        height: 500px;
     }
 }
 
