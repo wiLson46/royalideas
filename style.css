@@ -55,7 +55,7 @@
 
 @media (min-width: 1441px) and (max-width: 1920px) {
     #hero {
-        background: gray url("imagenes/heronb.jpg") no-repeat;
+        background: gray url("imagenes/herodesk.jpg") no-repeat;
         height: 450px;
     }
 }
