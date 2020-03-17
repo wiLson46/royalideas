@@ -53,10 +53,20 @@
 
 /** desktop **/
 
-@media (min-width: 1441px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
     #hero {
-        background: gray url("imagenes/herodesk.jpg") no-repeat;
-        height: 500px;
+        background: gray url("imagenes/heronb.jpg") no-repeat;
+        height: 450px;
+    }
+}
+
+
+/** 5k **/
+
+@media (min-width: 1921px) {
+    #hero {
+        background: gray url("imagenes/hero5k.jpg") no-repeat;
+        height: 1000px;
     }
 }
 
