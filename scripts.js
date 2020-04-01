@@ -20,6 +20,9 @@ function traducirAlIngles(e) {
     });
 }
 
-function clear(){
-    document.getElementById("Textarea1").textContent = "Paragraph changed!";
+function clearForm() {
+    document.getElementById("validationCustom01").value = ""; 
+    document.getElementById("validationCustom02").value = ""; 
+    document.getElementById("exampleInputEmail1").value = ""; 
+    document.getElementById("Textarea1").value = ""; 
 }

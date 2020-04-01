@@ -236,7 +236,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <form name="consulta" action="contact.php" method="get">
+                        <form name="consulta" action="contact.php" method="get" id="myForm">
                             <div class="form-row">
                                 <div class="form-group col-sm-12 col-lg-6">
                                     <label id="mod2en" class="d-none" for="validationCustom01">First name</label>
@@ -313,11 +313,10 @@
                                         Comentario invalido.
                                     </div>
                                     <div class="modal-footer">
-                                        <button id="mod15en" type="button" class="d-none btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                        <button id="mod15es" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                        <button id="mod16en" type="submit" class="d-none btn btn-primary">Send</button>
-                                        <button id="mod16es" type="submit" class="btn btn-primary" onclick="clear()">Enviar</button>
+                                        <button id="mod15en" type="button" class="d-none btn btn-secondary" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()" >Close</button>
+                                        <button id="mod15es" type="button" class="btn btn-secondary" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
+                                        <button id="mod16en" type="submit" class="d-none btn btn-primary" onmouseup="clearForm()" ontouchend="clearForm()">Send</button>
+                                        <button id="mod16es" type="submit" class="btn btn-primary" onmouseup="clearForm()" ontouchend="clearForm()">Enviar</button>
                                     </div>
                                 </div>
 
@@ -362,5 +361,6 @@
     v0.38 logo reworked + favicon
     v0.39 herobg reworked + logo color reworked + navbar color text rework (missing toggler itself)
     V0.40 contact form
+    v0.41 clear form
 
 -->
