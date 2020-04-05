@@ -209,7 +209,7 @@
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
                 <img src="imagenes/flag1.png" class="banderas" onclick="translateToSpanish()">
                 <img src="imagenes/flag2.png" class="banderas" onclick="traducirAlIngles()">
-                <p class="ml-2 mb-0 text-white">v0.43</p>
+                <p class="ml-2 mb-0 text-white">v0.44</p>
             </div>
 
         </section>
@@ -301,7 +301,7 @@
                             <div class="form-group col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onchange="showContent()">
-                                    <label id="mod12en" class="form-check-label" for="defaultCheck1">
+                                    <label id="mod12en" class="d-none form-check-label" for="defaultCheck1">
                                         I would like to receive a call
                                     </label>
                                     <label id="mod12es" class="form-check-label" for="defaultCheck1">
@@ -312,12 +312,12 @@
 
                             <div id="datosTelefono" class="form-row col-12 d-none">
                                 <div class="form-group col-sm-12 col-lg-6"">
-                                    <label id="mod13en" for="inputPhone">Phone</label>
+                                    <label id="mod13en" for="d-none inputPhone">Phone</label>
                                     <label id="mod13es" for="inputPhone">Telefono</label>
                                     <input type="text" class="form-control" id="inputPhone">
                                 </div>
                                 <div class="form-group col-sm-12 col-lg-6"">
-                                    <label id="mod14en" for="inputTime">Preferred calling times</label>
+                                    <label id="mod14en" for="d-none inputTime">Preferred calling times</label>
                                     <label id="mod14en" for="inputTime">Hora que desea recibir la llamada</label>
                                     <input type="text" class="form-control" id="inputTime">
                                 </div>
@@ -396,5 +396,6 @@
     v0.41 clear form
     v0.42 minor fixes
     v0.43 call in form
+    v0.44 minor fixes
 
 -->
