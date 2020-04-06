@@ -209,7 +209,7 @@
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
                 <img src="imagenes/flag1.png" class="banderas" onclick="translateToSpanish()">
                 <img src="imagenes/flag2.png" class="banderas" onclick="traducirAlIngles()">
-                <p class="ml-2 mb-0 text-white">v0.46</p>
+                <p class="ml-2 mb-0 text-white">v0.48</p>
             </div>
 
         </section>
@@ -236,7 +236,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form name="consulta" action="contact.php" method="get" id="myForm">
+                    <form class="was-validated" name="consulta" action="contact.php" method="get" id="myForm">
                         <div class="form-row">
                             <div class="form-group col-sm-12 col-lg-6">
                                 <label id="mod2en" class="d-none" for="validationCustom01">First name</label>
@@ -276,7 +276,7 @@
                                 <label id="mod8en" class="d-none" for="exampleInputEmail1">Email address</label>
                                 <label id="mod8es" for="exampleInputEmail1">Direccion de Email</label>
                                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                    aria-describedby="emailHelp" required>
 
                                 <span id="mod9en" class="d-none"><small id="emailHelp"
                                         class="form-text text-muted">We'll never share
@@ -300,7 +300,7 @@
 
                             <div class="form-group col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onchange="showContent()">
+                                    <input class="form" type="checkbox" value="" id="defaultCheck1" onchange="showContent()">
                                     <label id="mod12en" class="d-none form-check-label" for="defaultCheck1">
                                         I would like to receive a call
                                     </label>
@@ -314,19 +314,19 @@
                                 <div class="form-group col-sm-12 col-lg-6"">
                                     <label id="mod13en" for="inputPhone" class="d-none">Phone</label>
                                     <label id="mod13es" for="inputPhone">Telefono</label>
-                                    <input type="text" class="form-control" id="inputPhone">
+                                    <input name="telefono" type="text" class="form-control" id="inputPhone" required>
                                 </div>
                                 <div class="form-group col-sm-12 col-lg-6"">
                                     <label id="mod14en" for="inputTime" class="d-none">Preferred calling times</label>
                                     <label id="mod14es" for="inputTime">Hora que desea recibir la llamada</label>
-                                    <input type="text" class="form-control" id="inputTime">
+                                    <input name="time" type="text" class="form-control" id="inputTime" required>
                                 </div>
                             </div>
 
                             <div class="form-group col-12">
                                 <label id="mod15en" class="d-none" for="Textarea1">Comments</label>
                                 <label id="mod15es" for="Textarea1">Comentarios</label>
-                                <textarea name="mensaje" class="form-control" id="Textarea1" rows="3"></textarea>
+                                <textarea name="mensaje" class="form-control" id="Textarea1" rows="3" required></textarea>
                                 <div id="mod16en" class="d-none valid-feedback">
                                     Looks good!
                                 </div>
@@ -346,12 +346,16 @@
                                     <button id="mod18es" type="button" class="btn btn-secondary" data-dismiss="modal"
                                         onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
                                     <button id="mod19en" type="submit" class="d-none btn btn-primary"
-                                        onmouseup="clearForm()" ontouchend="clearForm()">Send</button>
-                                    <button id="mod19es" type="submit" class="btn btn-primary" onmouseup="clearForm()"
+                                        onmouseup="clearForm()" ontouchend="enviarMail()">Send</button>
+                                    <button id="mod19es" type="button" class="btn btn-primary" onmouseup="enviarMail()"
                                         ontouchend="clearForm()">Enviar</button>
                                 </div>
                             </div>
-
+                            <div class="col-12">
+                                <i class="far fa-check-circle text-success"></i>
+                                <p id="mod20en" class="">Message sent succefully</p>
+                                <p id="mod20es" class="">Se ha enviado su mensaje con exito</p>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -399,6 +403,7 @@
     v0.44 minor fixes
     v0.45 minor fixes
     v0.46 minor fixes
-
+    v0.47 validation and clear form refactor in js
+    v0.48 first commit of sent message on modal
 
 -->

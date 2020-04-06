@@ -25,17 +25,30 @@ function showContent() {
     check = document.getElementById("defaultCheck1");
     if (check.checked) {
         element.classList.remove("d-none");
-    }
-    else {
+    } else {
         element.classList.add("d-none");
     }
 }
 
-function clearForm() {
-    document.getElementById("validationCustom01").value = ""; 
-    document.getElementById("validationCustom02").value = ""; 
-    document.getElementById("exampleInputEmail1").value = ""; 
-    document.getElementById("Textarea1").value = "";
-    document.getElementById("defaultCheck1").checked = false;
-    document.getElementById("datosTelefono").classList.add("d-none"); 
+function enviarMail() {
+    if (document.getElementById("validationCustom01").value != "" && document.getElementById("exampleInputEmail1").value != ""
+            && document.getElementById("Textarea1").value != "" && document.getElementById("validationCustom02").value != "") {
+        if (document.getElementById("defaultCheck1").checked == true) {
+            if (document.getElementById("inputPhone").value != "" && document.getElementById("inputTime").value != "") {
+                document.getElementById("myForm").submit();
+                document.getElementById("myForm").reset();
+                showContent();
+            }
+        } 
+        else {
+            document.getElementById("myForm").submit();
+            document.getElementById("myForm").reset();
+        }
+
+    }
+    
+    function clearForm(){
+        document.getElementById("myForm").reset();
+        showContent();
+    }
 }

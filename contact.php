@@ -44,14 +44,13 @@ $mail->Timeout = 30;
 //Indicamos cual es la dirección de destino del correo
 $mail->AddAddress("hola@theroyalideas.com");
 $mail->Subject = "Nueva consulta desde la web";
-$mail->Body = "Recibiste un nuevo mensaje de " . filter_input(INPUT_GET, 'nombre') . " " . filter_input(INPUT_GET, 'apellido') . "\n" . filter_input(INPUT_GET, 'mensaje') . "\n Puedes responder a la direccion " . filter_input(INPUT_GET, 'email');
+$mail->Body = "Recibiste un nuevo mensaje de " . filter_input(INPUT_GET, 'nombre') . " " . filter_input(INPUT_GET, 'apellido') . "\n" . filter_input(INPUT_GET, 'mensaje') . "\n Puedes responder a la direccion " . filter_input(INPUT_GET, 'email')."\nel telefono es:". filter_input(INPUT_GET, "telefono")."\nllamar a las ". filter_input(INPUT_GET, "time");
 
 $exito = $mail->Send();
 
 if (!$exito) {
     echo "<script>alert('Error al enviar conslta');location.href ='javascript:history.back()';</script>";
 } 
-else {
+ else {
     echo "<script>alert('hemos recibido su consulta, pronto nos pondremo en contacto');location.href ='javascript:history.back()';</script>";
 }
-   
