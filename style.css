@@ -141,3 +141,12 @@ body.modal-open .supremeContainer {
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
+
+.iconoEnv {
+    font-size: 50px;
+}
+
+.tituloEnv {
+    font-size: 30px;
+    font-family: 'Oxanium', cursive;
+}

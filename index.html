@@ -209,7 +209,7 @@
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
                 <img src="imagenes/flag1.png" class="banderas" onclick="translateToSpanish()">
                 <img src="imagenes/flag2.png" class="banderas" onclick="traducirAlIngles()">
-                <p class="ml-2 mb-0 text-white">v0.48</p>
+                <p class="ml-2 mb-0 text-white">v0.49</p>
             </div>
 
         </section>
@@ -223,6 +223,7 @@
         aria-labelledby="formularioModalLabel" aria-hidden="true">
         <div id="custom" class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <span id="mod1en" class="d-none">
                         <h5 class="modal-title" id="formularioModalLabel">Contact us</h5>
@@ -235,6 +236,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    
+                    <div id="sentSuccess" class="d-none col-12">
+                        <i class="far fa-check-circle text-success d-flex justify-content-center iconoEnv"></i>
+                        <p id="mod20en" class="col-12 text-center tituloEnv d-none">Message sent succefully</p>
+                        <p id="mod20es" class="col-12 text-center tituloEnv">Se ha enviado su mensaje con exito</p>
+                    </div>
 
                     <form class="was-validated" name="consulta" action="contact.php" method="get" id="myForm">
                         <div class="form-row">
@@ -351,11 +358,6 @@
                                         ontouchend="clearForm()">Enviar</button>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <i class="far fa-check-circle text-success"></i>
-                                <p id="mod20en" class="">Message sent succefully</p>
-                                <p id="mod20es" class="">Se ha enviado su mensaje con exito</p>
-                            </div>
                     </form>
                 </div>
             </div>
@@ -405,5 +407,6 @@
     v0.46 minor fixes
     v0.47 validation and clear form refactor in js
     v0.48 first commit of sent message on modal
+    v0.49 sent message fixed. all working
 
 -->
