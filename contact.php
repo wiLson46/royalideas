@@ -49,8 +49,8 @@ $mail->Body = "Recibiste un nuevo mensaje de " . filter_input(INPUT_GET, 'nombre
 $exito = $mail->Send();
 
 if (!$exito) {
-    echo "<script>alert('Error al enviar conslta');location.href ='javascript:history.back()';</script>";
+    echo "<script>location.href ='javascript:history.back()';</script>";
 } 
  else {
-    echo "<script>alert('hemos recibido su consulta, pronto nos pondremo en contacto');location.href ='javascript:history.back()';</script>";
+    echo "<script>location.href ='javascript:history.back()';</script>";
 }

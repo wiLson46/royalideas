@@ -207,9 +207,9 @@
             </div>
 
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
-                <img src="imagenes/flag1.png" class="banderas" onclick="translateToSpanish()">
-                <img src="imagenes/flag2.png" class="banderas" onclick="traducirAlIngles()">
-                <p class="ml-2 mb-0 text-white">v0.50</p>
+                <img src="imagenes/flag150px.png" class="banderas" onclick="translateToSpanish()">
+                <img src="imagenes/flag250px.png" class="banderas" onclick="traducirAlIngles()">
+                <p class="ml-2 mb-0 text-white">v0.51</p>
             </div>
 
         </section>
@@ -238,8 +238,8 @@
                 </div>
                 <div class="modal-body">
                     
-                    <div id="sentSuccess" class="d-none col-12">
-                        <i class="far fa-check-circle text-success d-flex justify-content-center iconoEnv"></i>
+                    <div id="sentSuccess" class="d-none col-12 my-2">
+                        <i class="far fa-check-circle text-success d-flex justify-content-center iconoEnv py-2"></i>
                         <p id="mod20en" class="col-12 text-center tituloEnv d-none">Message sent succefully</p>
                         <p id="mod20es" class="col-12 text-center tituloEnv">Se ha enviado su mensaje con exito</p>
                     </div>
@@ -335,28 +335,23 @@
                                 <label id="mod15en" class="d-none" for="Textarea1">Comments</label>
                                 <label id="mod15es" for="Textarea1">Comentarios</label>
                                 <textarea name="mensaje" class="form-control" id="Textarea1" rows="3" required></textarea>
-                                <div id="mod16en" class="d-none valid-feedback">
+                                <div id="mod16en" class="d-none valid-feedback pb-3">
                                     Looks good!
                                 </div>
-                                <div id="mod16es" class="valid-feedback">
+                                <div id="mod16es" class="valid-feedback pb-3">
                                     Se ve bien!
                                 </div>
-                                <div id="mod17en" class="d-none invalid-feedback">
+                                <div id="mod17en" class="d-none invalid-feedback pb-3">
                                     Invalid comments.
                                 </div>
-                                <div id="mod17es" class="invalid-feedback">
+                                <div id="mod17es" class="invalid-feedback pb-3">
                                     Comentario invalido.
                                 </div>
                                 <div class="modal-footer">
-                                    <button id="mod18en" type="button" class="d-none btn btn-secondary"
-                                        data-dismiss="modal" onmouseup="clearForm()"
-                                        ontouchend="clearForm()">Close</button>
-                                    <button id="mod18es" type="button" class="btn btn-secondary" data-dismiss="modal"
-                                        onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
-                                    <button id="mod19en" type="submit" class="d-none btn btn-primary"
-                                        onmouseup="clearForm()" ontouchend="enviarMail()">Send</button>
-                                    <button id="mod19es" type="button" class="btn btn-primary" onmouseup="enviarMail()"
-                                        ontouchend="clearForm()">Enviar</button>
+                                    <button id="mod18en" type="button" class="d-none btn btn-secondary" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Close</button>
+                                    <button id="mod18es" type="button" class="btn btn-secondary" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
+                                    <button id="mod19en" type="button" class="d-none btn btn-primary" onmouseup="enviarMail()" ontouchend="enviarMail()">Send</button>
+                                    <button id="mod19es" type="button" class="btn btn-primary" onmouseup="enviarMail()" ontouchend="enviarMail()">Enviar</button>
                                 </div>
                             </div>
                     </form>
@@ -410,5 +405,6 @@
     v0.48 first commit of sent message on modal
     v0.49 sent message fixed. all working
     v0.50 minor fixes
+    v0.51 minor fixes margins and header img on server + flags rework. 
 
 -->

@@ -129,8 +129,6 @@
 }
 
 .banderas {
-    width: 50px;
-    height: 50px;
     cursor: pointer;
 }
 
@@ -147,6 +145,6 @@ body.modal-open .supremeContainer {
 }
 
 .tituloEnv {
-    font-size: 30px;
+    font-size: 32px;
     font-family: 'Oxanium', cursive;
 }
