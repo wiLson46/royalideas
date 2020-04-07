@@ -209,7 +209,7 @@
             <div class="mr-auto mb-3 d-flex justify-content-end align-items-end">
                 <img src="imagenes/flag1.png" class="banderas" onclick="translateToSpanish()">
                 <img src="imagenes/flag2.png" class="banderas" onclick="traducirAlIngles()">
-                <p class="ml-2 mb-0 text-white">v0.49</p>
+                <p class="ml-2 mb-0 text-white">v0.50</p>
             </div>
 
         </section>
@@ -231,7 +231,8 @@
                     <span id="mod1es" class="">
                         <h5 class="modal-title" id="formularioModalLabel">Contactanos</h5>
                     </span>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onmouseup="clearForm()"
+                            ontouchend="clearForm()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -243,7 +244,7 @@
                         <p id="mod20es" class="col-12 text-center tituloEnv">Se ha enviado su mensaje con exito</p>
                     </div>
 
-                    <form class="was-validated" name="consulta" action="contact.php" method="get" id="myForm">
+                    <form class="needs-validation" name="consulta" action="contact.php" method="get" id="myForm">
                         <div class="form-row">
                             <div class="form-group col-sm-12 col-lg-6">
                                 <label id="mod2en" class="d-none" for="validationCustom01">First name</label>
@@ -408,5 +409,6 @@
     v0.47 validation and clear form refactor in js
     v0.48 first commit of sent message on modal
     v0.49 sent message fixed. all working
+    v0.50 minor fixes
 
 -->
